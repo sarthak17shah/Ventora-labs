@@ -88,6 +88,44 @@ Fonts are configured in `src/app/layout.tsx` using Next.js font optimization.
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
+## Deployment
+
+This project is ready to deploy on Vercel. Vercel automatically detects Next.js applications and configures the build settings.
+
+### Deploy to Vercel
+
+1. **Push your code to GitHub** (if not already done):
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin <your-github-repo-url>
+   git push -u origin main
+   ```
+
+2. **Deploy on Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Sign in with your GitHub account
+   - Click "Add New Project"
+   - Import your GitHub repository
+   - Vercel will auto-detect Next.js and configure everything
+   - Click "Deploy"
+
+3. **That's it!** Your app will be live in minutes.
+
+Alternatively, you can use the Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
+### Environment Variables
+
+If you need environment variables:
+- Go to your project settings on Vercel
+- Navigate to "Environment Variables"
+- Add any required variables
+
 ## License
 
 MIT License - feel free to use this for your own projects!
